@@ -1,0 +1,26 @@
+{
+  "name": "placeholder-api",
+  "version": "1.0.0",
+  "description": "Simple placeholder API for proof of concept deployment",
+  "main": "src/app.js",
+  "author": {
+    "name": "Fred Lackey",
+    "email": "fred.lackey@gmail.com",
+    "url": "https://fredlackey.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/app.js",
+    "start": "node src/app.js",
+    "build": "mkdir -p build && cp src/lambda.js build/index.js && cp src/app.js build/",
+    "package:lambda": "npm run build && cp package-lambda.json build/package.json && cd build && npm install --production && zip -r ../lambda-deployment.zip .",
+    "clean": "rm -rf build/ lambda-deployment.zip"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@codegenie/serverless-express": "^4.12.6"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

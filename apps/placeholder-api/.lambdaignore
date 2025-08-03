@@ -1,0 +1,19 @@
+# Documentation
+README.md
+*.md
+
+# Git files
+.git*
+
+# Development files
+.env*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

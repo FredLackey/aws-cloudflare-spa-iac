@@ -1,0 +1,165 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dialogue {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.health-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.api-endpoint {
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.api-endpoint code {
+  background-color: #1a1a1a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+}
+
+.status-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.status-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 12px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading-message,
+.success-message,
+.error-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.loading-message {
+  background-color: #1e3a8a;
+  color: #dbeafe;
+}
+
+.success-message {
+  background-color: #166534;
+  color: #dcfce7;
+}
+
+.error-message {
+  background-color: #991b1b;
+  color: #fecaca;
+}
+
+.api-response {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.error-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  .dialogue {
+    background-color: #f8fafc;
+    color: #213547;
+  }
+  
+  .health-section {
+    background-color: #e2e8f0;
+  }
+  
+  .api-response {
+    background-color: #f1f5f9;
+    color: #334155;
+  }
+  
+  .api-endpoint code {
+    background-color: #e2e8f0;
+    color: #334155;
+  }
+}
+}

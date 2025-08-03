@@ -1,0 +1,86 @@
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform plan files
+*.tfplan
+*.tfplan.*
+
+# Terraform directory
+.terraform/
+.terraform.*
+
+# Terraform lock files (may want to keep these in team environments)
+# Comment out the line below if you want to commit lock files
+.terraform.lock.hcl
+
+# Terraform crash log files
+crash.log
+crash.*.log
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform module cache
+.terraform.d/
+
+# Override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
+
+# Include tfplan files you do wish to add to version control using negated pattern
+# !example.tfplan
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Archive folder (per user rules)
+/_archive/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js (if using any Node-based tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# AWS credentials (if accidentally placed in project)
+.aws/
+aws-credentials
